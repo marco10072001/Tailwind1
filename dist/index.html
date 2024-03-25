@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog en ligne</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- En-tête -->
+    <header class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-xl font-bold">Mon Blog</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Accueil</a></li>
+                    <li><a href="#" class="hover:underline">Articles</a></li>
+                    <li><a href="#" class="hover:underline">À propos</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Articles en vedette -->
+    <section class="py-8">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Articles en vedette</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Article 1 -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="./photos/Article1.jpg" alt="Article 1" class="w-full h-32 object-cover mb-2">
+                    <h3 class="text-lg font-bold mb-2">Titre de l'article 1</h3>
+                    <p class="text-gray-700">Extrait de l'article 1...</p>
+                </div>
+                <!-- Article 2 -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="./photos/Article2.jpg" alt="Article 2" class="w-full h-32 object-cover mb-2">
+                    <h3 class="text-lg font-bold mb-2">Titre de l'article 2</h3>
+                    <p class="text-gray-700">Extrait de l'article 2...</p>
+                </div>
+                <!-- Article 3 -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="./photos/Article3.jpg" alt="Article 3" class="w-full h-32 object-cover mb-2">
+                    <h3 class="text-lg font-bold mb-2">Titre de l'article 3</h3>
+                    <p class="text-gray-700">Extrait de l'article 3...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catégories -->
+    <section class="py-8 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Catégories</h2>
+            <div class="flex space-x-2">
+                <span class="bg-blue-500 text-white px-2 py-1 rounded-lg">Catégorie 1</span>
+                <span class="bg-blue-500 text-white px-2 py-1 rounded-lg">Catégorie 2</span>
+                <span class="bg-blue-500 text-white px-2 py-1 rounded-lg">Catégorie 3</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles récents -->
+    <section class="py-8">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Articles récents</h2>
+            <ul>
+                <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Titre de l'article 1</a> - <span class="text-gray-500">Date de publication</span></li>
+                <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Titre de l'article 2</a> - <span class="text-gray-500">Date de publication</span></li>
+                <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Titre de l'article 3</a> - <span class="text-gray-500">Date de publication</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Formulaire d'inscription à la newsletter -->
+    <section class="py-8 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Inscrivez-vous à notre newsletter</h2>
+            <form>
+                <div class="flex items-center">
+                    <input type="email" placeholder="Votre adresse e-mail" class="border border-gray-300 px-4 py-2 rounded-l-md focus:outline-none">
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 focus:outline-none">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <h3 class="text-xl font-bold">Suivez-nous sur les réseaux sociaux</h3>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <p>&copy; 2024 Mon Blog. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script pour les icônes -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
